@@ -24,6 +24,7 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 header figure {
@@ -38,6 +39,7 @@ header figure img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  pointer-events: none;
 }
 
 header button {
