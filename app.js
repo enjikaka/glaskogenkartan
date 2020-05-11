@@ -1,4 +1,5 @@
 import './components/lantmateriet-karta.js';
+import './components/glaskogencard-buy.js';
 
 const overnightCabinIcon = L.icon({
   iconUrl: 'img/overnight-cabin.svg',
@@ -95,6 +96,17 @@ async function loadMarkers (map) {
   loadLeanTos(map);
   loadLayBys(map);
 }
+
+document.querySelector('header button').addEventListener('click', () => {
+  const buyWindow = document.querySelector('glaskogencard-buy');
+  const open = buyWindow.getAttribute('open');
+
+  if (open) {
+    buyWindow.removeAttribute('open');
+  } else {
+    buyWindow.setAttribute('open', '');
+  }
+})
 
 document.addEventListener('map:ready', () => {
   const { leafletMap: map } = document.querySelector('lantmateriet-karta');

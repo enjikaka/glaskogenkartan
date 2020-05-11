@@ -26,21 +26,15 @@
 </head>
 <body>
   <header>
-    <div class="left">
-      <!--
-      <button id="menu-button" type="button">
-        <i class="material-icons">menu</i>
-      </button>
-      -->
-    </div>
     <figure>
       <img src="https://glaskogen.se/assets/smresponsive/images/logo.png" alt="Glaskogen logotyp">
     </figure>
-    <div class="right">
-      <!-- Placeholder -->
-    </div>
+    <button>
+      Glaskogenkort
+    </button>
   </header>
   <lantmateriet-karta></lantmateriet-karta>
+  <glaskogencard-buy open></glaskogencard-buy>
   <script src="app.js" type="module"></script>
   <script>
     if ('serviceWorker' in navigator && document.location.href.indexOf('localhost') === -1) {
