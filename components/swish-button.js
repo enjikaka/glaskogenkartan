@@ -35,7 +35,7 @@ function isOnMobile (userAgent = navigator.userAgent) {
 async function SwishButton (props) {
   const { $, css, postRender, html } = this;
 
-  const swishSupport = isOnMobile();
+  const swishSupport = true;//isOnMobile();
 
   postRender(() => {
     const paymentData = {
@@ -46,7 +46,8 @@ async function SwishButton (props) {
 
     if (swishSupport) {
 
-      $('img').remove();
+      $('details').remove();
+      $('button').textContent += ` ${paymentData.amount} kr`
       $('button').addEventListener('click', () => {
         const swishUrl = generateSwishURL(paymentData);
 
@@ -67,8 +68,12 @@ async function SwishButton (props) {
 
     button {
       background-image: linear-gradient(180deg,#1dafec,#129bd4 98.72%);
-      padding: 0.5em 1em;
+      padding: 1em 0;
       border-radius: 4px;
+      border: 0;
+      color: white;
+      width: 100%;
+      font-size: 1rem;
     }
 
     img {
