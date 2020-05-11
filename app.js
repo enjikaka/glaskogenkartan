@@ -1,5 +1,4 @@
 import './components/lantmateriet-karta.js';
-import './components/reko-page.js';
 
 const overnightCabinIcon = L.icon({
   iconUrl: 'img/overnight-cabin.svg',
@@ -97,12 +96,6 @@ async function loadMarkers (map) {
   loadLayBys(map);
 }
 
-async function loadPage (event) {
-  const rekoPage = document.querySelector('reko-page');
-
-  rekoPage.setAttribute('page-id', event.detail.pageId);
-}
-
 document.addEventListener('map:ready', () => {
   const { leafletMap: map } = document.querySelector('lantmateriet-karta');
 
@@ -129,15 +122,4 @@ document.addEventListener('map:ready', () => {
     const { lat, lng } = map.mouseEventToLatLng(ev.originalEvent);
     console.log(JSON.stringify([lng, lat]));
   });
-});
-
-document.addEventListener('show:page', event => loadPage(event));
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.location.hash.includes('/page/')) {
-    loadPage({
-      detail: {
-        pageId: document.location.hash.split('/page/')[1]
-      }
-    });
-  }
 });
