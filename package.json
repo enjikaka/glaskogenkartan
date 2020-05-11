@@ -2,7 +2,7 @@
   "name": "glaskogenkartan",
   "type": "module",
   "version": "0.0.1",
-  "description": "A map to help find REKO-rings where you can buy local produce.",
+  "description": "Glaskogenkartan.",
   "main": "build.js",
   "engines": {
     "node": "^13"
