@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dammarna",
+        "bedCount": 10,
+        "type": "OVERNIGHT_CABIN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.535205,
+          59.480712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gängene Lillebo",
+        "bedCount": 4,
+        "type": "OVERNIGHT_CABIN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.55431,
+          59.43407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Södra Sundsudden",
+        "bedCount": 4,
+        "type": "OVERNIGHT_CABIN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.34665,
+          59.52200
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Glassnäs Dacka",
+        "bedCount": 4,
+        "type": "OVERNIGHT_CABIN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.30757,
+          59.56383
+        ]
+      }
+    }
+  ]
+}

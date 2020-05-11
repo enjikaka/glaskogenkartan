@@ -1,0 +1,84 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY",
+        "glaskogenNumber": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.300685644149782,
+          59.54303230147632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.24057,
+          59.4654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.49589,
+          59.43981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.52385,
+          59.50079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.55562,
+          59.43156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.53714,
+          59.42920
+        ]
+      }
+    }
+  ]
+}
