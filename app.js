@@ -5,28 +5,28 @@ const overnightCabinIcon = L.icon({
   iconUrl: 'img/overnight-cabin.svg',
   iconSize: [32, 32],
   iconAnchor: [16, 16],
-  popupAnchor: [32, 0]
+  popupAnchor: [0, -20]
 });
 
 const leanToIcon = L.icon({
   iconUrl: 'img/lean-to.svg',
   iconSize: [32, 32],
   iconAnchor: [16, 16],
-  popupAnchor: [32, 0]
+  popupAnchor: [0, -20]
 });
 
 const layByIcon = L.icon({
   iconUrl: 'img/lay-by.svg',
   iconSize: [32, 32],
   iconAnchor: [16, 16],
-  popupAnchor: [32, 0]
+  popupAnchor: [0, -20]
 });
 
 const undefinedIcon = L.icon({
   iconUrl: 'img/undefined.svg',
   iconSize: [32, 32],
   iconAnchor: [16, 16],
-  popupAnchor: [32, 0]
+  popupAnchor: [0, -20]
 });
 
 function getIconForFeature (feature) {
@@ -45,6 +45,24 @@ function getIconForFeature (feature) {
   return undefinedIcon;
 }
 
+function onEachFeature(feature, layer) {
+  if (feature.properties) {
+    const popupContent = [];
+
+    if (feature.properties.title) {
+      popupContent.push(`<b>${feature.properties.title}</b>`);
+    }
+
+    popupContent.push(`Glaskogennummer: ${feature.properties.glaskogenNumber || 'okänt'}`);
+
+    if (feature.properties.bedCount) {
+      popupContent.push(`Bäddar: ${feature.properties.bedCount}`);
+    }
+
+    layer.bindPopup(popupContent.join('<br>'));
+  }
+}
+
 async function loadMarkersFromJSON({ map, path, color, fillColor }) {
   const response = await fetch(path);
   const json = await response.json();
@@ -53,7 +71,7 @@ async function loadMarkersFromJSON({ map, path, color, fillColor }) {
 
   const markers = L.markerClusterGroup();
 
-  L.geoJSON(json, { pointToLayer }).addTo(markers);
+  L.geoJSON(json, { pointToLayer, onEachFeature }).addTo(markers);
 
   markers.addTo(map);
 }

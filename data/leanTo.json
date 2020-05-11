@@ -75,7 +75,8 @@
       "type": "Feature",
       "properties": {
         "type": "LEAN_TO",
-        "glaskogenNumber": 53
+        "glaskogenNumber": 53,
+        "title": "Älveberget"
       },
       "geometry": {
         "type": "Point",
