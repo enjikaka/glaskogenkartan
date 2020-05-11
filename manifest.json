@@ -13,8 +13,8 @@
       "type": "image\/png"
     }
   ],
-  "theme_color": "#4d8d2a",
-  "background_color": "#4d8d2a",
+  "theme_color": "#1d1d1b",
+  "background_color": "#1d1d1b",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "index.html?utm_source=homescreen"

@@ -16,9 +16,8 @@
     "url": "git+https://github.com/enjikaka/reko-map.git"
   },
   "keywords": [
-    "reko",
-    "map",
-    "hackthecrisis"
+    "glaskogen",
+    "karta"
   ],
   "author": "Jeremy Karlsson <jeremy@vufuzi.se>",
   "license": "MIT",
