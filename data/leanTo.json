@@ -5,6 +5,20 @@
       "type": "Feature",
       "properties": {
         "type": "LEAN_TO",
+        "glaskogenNumber": 54
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.333140373229982,
+          59.56889710867169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LEAN_TO",
         "glaskogenNumber": 31
       },
       "geometry": {

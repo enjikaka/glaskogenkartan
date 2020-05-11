@@ -5,6 +5,20 @@
       "type": "Feature",
       "properties": {
         "type": "LAY_BY",
+        "glaskogenNumber": 27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.366704531013967,
+          59.51924582268154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LAY_BY",
         "glaskogenNumber": 24
       },
       "geometry": {

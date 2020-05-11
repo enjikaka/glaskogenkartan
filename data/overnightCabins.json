@@ -6,7 +6,8 @@
       "properties": {
         "title": "Dammarna",
         "bedCount": 10,
-        "type": "OVERNIGHT_CABIN"
+        "type": "OVERNIGHT_CABIN",
+        "glaskogenNumber": 11
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +22,8 @@
       "properties": {
         "title": "Gängene Lillebo",
         "bedCount": 4,
-        "type": "OVERNIGHT_CABIN"
+        "type": "OVERNIGHT_CABIN",
+        "glaskogenNumber": 45
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +38,8 @@
       "properties": {
         "title": "Södra Sundsudden",
         "bedCount": 4,
-        "type": "OVERNIGHT_CABIN"
+        "type": "OVERNIGHT_CABIN",
+        "glaskogenNumber": 26
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +54,8 @@
       "properties": {
         "title": "Glassnäs Dacka",
         "bedCount": 4,
-        "type": "OVERNIGHT_CABIN"
+        "type": "OVERNIGHT_CABIN",
+        "glaskogenNumber": 23
       },
       "geometry": {
         "type": "Point",
