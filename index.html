@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <link rel="preload" href="rekorings.json" as="fetch">
-  <link rel="preload" href="localFoodNodes.json" as="fetch">
+  <link rel="preload" href="data/layBy.json" as="fetch">
+  <link rel="preload" href="data/leanTo.json" as="fetch">
+  <link rel="preload" href="data/overnightCabins.json" as="fetch">
   <link rel="preload" href="components/lantmateriet-karta.js" as="script">
-  <link rel="preload" href="components/reko-page.js" as="script">
-  <link rel="preload" href="components/reko-page.css" as="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="generator" content="Vufuzi">
@@ -42,7 +41,6 @@
     </div>
   </header>
   <lantmateriet-karta></lantmateriet-karta>
-  <reko-page></reko-page>
   <script src="app.js" type="module"></script>
   <script>
     if ('serviceWorker' in navigator && document.location.href.indexOf('localhost') === -1) {
