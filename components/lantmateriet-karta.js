@@ -43,7 +43,7 @@ class LantmaterietKarta extends Component {
         height: 100%;
       }
       </style>
-      <div id="map"></div>
+      <div id="map" data-tap-disabled="true"></div>
     `;
   }
 }
