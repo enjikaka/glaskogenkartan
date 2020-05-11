@@ -42,7 +42,7 @@ async function GlaskogencardBuy (props) {
     <h3>Årskort, familj</h3>
     <p>Samma befogenheter som dygnskort men gäller för ett helt år, och hela din familj.</p>
     <span>1200 kr per person</span>
-    <swish-button amount="800" message="Glaskogenkort. År, familj." payee="1236824262" qr-code="img/årskort-familj.svg"></swish-button>
+    <swish-button amount="1200" message="Glaskogenkort. År, familj." payee="1236824262" qr-code="img/årskort-familj.svg"></swish-button>
 
     <h3>Fiskekort</h3>
     <p>Tillåter dig att fiska i de flesta sjöar i Glaskogens naturreservat. Giltigt från köpetillfälle till klockan 24:00.</p>
