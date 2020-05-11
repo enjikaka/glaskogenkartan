@@ -130,6 +130,8 @@ document.addEventListener('map:ready', () => {
 
   loadMarkers(map);
 
+  map.invalidateSize();
+
   map.on('click', function(ev){
     const { lat, lng } = map.mouseEventToLatLng(ev.originalEvent);
     console.log(JSON.stringify([lng, lat]));
