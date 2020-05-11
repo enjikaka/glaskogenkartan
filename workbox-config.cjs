@@ -1,6 +1,6 @@
 module.exports = {
-  "globDirectory": ".",
-  "globPatterns": [
+  globDirectory: ".",
+  globPatterns: [
     "*.{html,css,js,json}",
     "web_modules/*.js",
     "data/*.json",
@@ -8,5 +8,11 @@ module.exports = {
     "components/*.{html,css,js}",
     "img/*.{png,svg,ico}"
   ],
-  "swDest": "sw.js"
+  swDest: "sw.js",
+  runtimeCaching: [
+    {
+      urlPattern: /api\.lantmateriet\.se$/,
+      handler: 'CacheFirst'
+    }
+  ]
 };
