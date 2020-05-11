@@ -35,7 +35,7 @@ function isOnMobile (userAgent = navigator.userAgent) {
 async function SwishButton (props) {
   const { $, css, postRender, html } = this;
 
-  const swishSupport = true;//isOnMobile();
+  const swishSupport = isOnMobile();
 
   postRender(() => {
     const paymentData = {
