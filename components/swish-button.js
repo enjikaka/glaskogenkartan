@@ -24,19 +24,18 @@ function generateSwishURL ({
   return `swish://payment?data=${decodeURIComponent(JSON.stringify(paymentRequest))}&source=glaskogenkartan`;
 }
 
-async function hasSwishSupport () {
-  try {
-    await fetch('swish://', { mode: 'no-cors' });
-    return true;
-  } catch (e) {
-    return false;
-  }
+function isOnMobile (userAgent = navigator.userAgent) {
+  const iPad = userAgent.match(/iPad/i);
+  const iPhone = userAgent.match(/iPhone/i);
+  const Android = userAgent.match(/Android/i);
+
+  return Boolean(iPad || iPhone || Android);
 }
 
 async function SwishButton (props) {
   const { $, css, postRender, html } = this;
 
-  const swishSupport = await hasSwishSupport();
+  const swishSupport = isOnMobile();
 
   postRender(() => {
     const paymentData = {
