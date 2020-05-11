@@ -58,7 +58,8 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "LAY_BY"
+        "type": "LAY_BY",
+        "glaskogenNumber": 13
       },
       "geometry": {
         "type": "Point",

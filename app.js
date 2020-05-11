@@ -29,6 +29,14 @@ const undefinedIcon = L.icon({
   popupAnchor: [0, -20]
 });
 
+function isApple (userAgent = navigator.userAgent) {
+  const iPad = userAgent.match(/iPad/i);
+  const iPhone = userAgent.match(/iPhone/i);
+  const Safari = userAgent.match(/Safari/i);
+
+  return Boolean(iPad || iPhone || Safari);
+}
+
 function getIconForFeature (feature) {
   if (feature.properties.type === 'OVERNIGHT_CABIN') {
     return overnightCabinIcon;
@@ -58,6 +66,8 @@ function onEachFeature(feature, layer) {
     if (feature.properties.bedCount) {
       popupContent.push(`Bäddar: ${feature.properties.bedCount}`);
     }
+
+    popupContent.push(feature.geometry.coordinates.join(', '));
 
     layer.bindPopup(popupContent.join('<br>'));
   }
@@ -126,11 +136,9 @@ document.addEventListener('map:ready', () => {
 
   L.polyline(polylinePoints, { color: '#BC5800' }).addTo(map);
 
-  map.setView([59.48048673863045, 12.404165267944338], 11);
-
   loadMarkers(map);
 
-  map.invalidateSize();
+  map.setView(glaskogenBounds.getCenter(), 11);
 
   map.on('click', function(ev){
     const { lat, lng } = map.mouseEventToLatLng(ev.originalEvent);

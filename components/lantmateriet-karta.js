@@ -25,6 +25,7 @@ class LantmaterietKarta extends Component {
     });
 
     this.map.addLayer(lantmateriet);
+    this.map.invalidateSize();
 
     document.dispatchEvent(new CustomEvent('map:ready'));
   }

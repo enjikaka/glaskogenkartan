@@ -5,6 +5,48 @@
       "type": "Feature",
       "properties": {
         "type": "LEAN_TO",
+        "glaskogenNumber": 16
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.449636925011875,
+          59.523996860338606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LEAN_TO",
+        "glaskogenNumber": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.480808552354578,
+          59.51764297448463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LEAN_TO",
+        "glaskogenNumber": 29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.24031448364258,
+          59.47540840718583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "LEAN_TO",
         "glaskogenNumber": 54
       },
       "geometry": {
@@ -187,7 +229,8 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "LEAN_TO"
+        "type": "LEAN_TO",
+        "glaskogenNumber": 12
       },
       "geometry": {
         "type": "Point",
@@ -200,36 +243,42 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "LEAN_TO"
+        "type": "LEAN_TO",
+        "glaskogenNumber": 39
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.43281, 59.40728
+          12.43281,
+          59.40728
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "type": "LEAN_TO"
+        "type": "LEAN_TO",
+        "glaskogenNumber": 41
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.47101, 59.41280
+          12.47101,
+          59.41280
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "type": "LEAN_TO"
+        "type": "LEAN_TO",
+        "glaskogenNumber": 50
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.53162, 59.40200
+          12.53162,
+          59.40200
         ]
       }
     },
@@ -260,24 +309,28 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "LEAN_TO"
+        "type": "LEAN_TO",
+        "glaskogenNumber": 37
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.40909, 59.42582
+          12.40909,
+          59.42582
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "type": "LEAN_TO"
+        "type": "LEAN_TO",
+        "glaskogenNumber": 36
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.38039, 59.42871
+          12.38039,
+          59.42871
         ]
       }
     }
