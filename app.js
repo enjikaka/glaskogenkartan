@@ -67,7 +67,7 @@ function onEachFeature(feature, layer) {
       popupContent.push(`Bäddar: ${feature.properties.bedCount}`);
     }
 
-    popupContent.push(feature.geometry.coordinates.join(', '));
+    // popupContent.push(feature.geometry.coordinates.join(', '));
 
     layer.bindPopup(popupContent.join('<br>'));
   }
