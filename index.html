@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preload" href="data/layBy.json" as="fetch">
   <link rel="preload" href="data/leanTo.json" as="fetch">
   <link rel="preload" href="data/overnightCabins.json" as="fetch">
@@ -23,18 +24,20 @@
   <meta name="msapplication-TileColor" content="#1d1d1b">
   <meta name="msapplication-config" content="browserconfig.xml">
   <meta name="theme-color" content="#1d1d1b">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <figure>
+    <!--<figure>
       <img src="https://glaskogen.se/assets/smresponsive/images/logo.png" alt="Glaskogen logotyp">
-    </figure>
+    </figure>-->
     <button>
       Glaskogenkort
     </button>
   </header>
   <lantmateriet-karta></lantmateriet-karta>
   <glaskogencard-buy></glaskogencard-buy>
+  <folklore-article></folklore-article>
   <script src="app.js" type="module"></script>
   <script>
     if ('serviceWorker' in navigator && document.location.href.indexOf('localhost') === -1) {

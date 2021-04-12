@@ -1,5 +1,6 @@
 import './components/lantmateriet-karta.js';
 import './components/glaskogencard-buy.js';
+import './components/folklore-article.js';
 
 const overnightCabinIcon = L.icon({
   iconUrl: 'img/overnight-cabin.svg',
@@ -17,6 +18,13 @@ const leanToIcon = L.icon({
 
 const layByIcon = L.icon({
   iconUrl: 'img/lay-by.svg',
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
+  popupAnchor: [0, -20]
+});
+
+const folklorePlaceIcon = L.icon({
+  iconUrl: 'img/folklore-place.svg',
   iconSize: [32, 32],
   iconAnchor: [16, 16],
   popupAnchor: [0, -20]
@@ -50,12 +58,29 @@ function getIconForFeature (feature) {
     return layByIcon;
   }
 
+  if (feature.properties.type === 'FOLKLORE_PLACE') {
+    return folklorePlaceIcon;
+  }
+
   return undefinedIcon;
 }
 
-function onEachFeature(feature, layer) {
+async function onEachFeature(feature, layer) {
   if (feature.properties) {
     const popupContent = [];
+
+    if ('data' in feature.properties) {
+      layer.on('click', () => {
+        console.log('layer click');
+
+        document.dispatchEvent(new CustomEvent('folklore:display', {
+          detail: {
+            url: 'data/' + feature.properties.data
+          }
+        }));
+      }, false);
+      return;
+    }
 
     if (feature.properties.title) {
       popupContent.push(`<b>${feature.properties.title}</b>`);
@@ -101,10 +126,22 @@ const loadOvernightCabins = map => loadMarkersFromJSON({
   path: 'data/overnightCabins.json'
 });
 
+const loadFolklorePlaces = map => loadMarkersFromJSON({
+  map,
+  path: 'data/folklorePlace.json'
+});
+
 async function loadMarkers (map) {
-  loadOvernightCabins(map);
-  loadLeanTos(map);
-  loadLayBys(map);
+  if (
+    document.location.pathname === '/folkminnen' ||
+    document.location.hash === '#folkminnen'
+  ) {
+    loadFolklorePlaces(map);
+  } else {
+    loadOvernightCabins(map);
+    loadLeanTos(map);
+    loadLayBys(map);
+  }
 }
 
 document.querySelector('header button').addEventListener('click', () => {

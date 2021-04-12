@@ -3,6 +3,7 @@
   --reko-colour-darker: hsl(99, 54%, 32%);
   --local-food-node-colour: hsl(14, 89%, 32%);
   --local-food-node-colour-darker: hsl(14, 89%, 28%);
+  --golden-ratio: 1.61803398875;
 }
 
 html,

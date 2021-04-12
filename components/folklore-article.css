@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Muli:wght@300;400');
+
+:host {
+  font-family: 'PT Serif', serif;
+  position: fixed;
+  top: calc(var(--golden-ratio) * 1em);
+  left: calc(var(--golden-ratio) * 1em);
+  right: calc(var(--golden-ratio) * 1em);
+  bottom: calc(var(--golden-ratio) * 1em);
+  background-image: url(img/paper.svg);
+  padding: calc(var(--golden-ratio) * 2em) calc(var(--golden-ratio) * 1em);
+  z-index: 1300;
+  transform: translateY(110%);
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  box-shadow: none;
+  content-visibility: auto;
+  will-change: transform;
+}
+
+:host([open]) {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+  box-shadow: 0 0 10vw black;
+  transition: transform 500ms ease, box-shadow 500ms ease 500ms
+}
+
+#close-button {
+  all: unset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 6px;
+  padding: 0.5em;
+}
+
+main {
+  overflow-y: auto;
+  height: 100%;
+}
+
+p::first-line {
+  text-indent: 40px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+p + p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+cite {
+  display: block;
+  text-align: right;
+}
+
+h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0;
+  display: block;
+}
+
+h3 {
+  margin-top: 4rem;
+}

@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Glasnäsfinnarna i Älgå",
+        "data": "folklore/glasnäsfinnarna-i-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.309451124165209,
+          59.56270530806389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Nedre Glasnäs",
+        "data": "folklore/nedre-glasnäs.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.314741168520413,
+          59.59869702886328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Finnen på Ödetorpet",
+        "data": "folklore/finnen-på-ödetorpet.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.28641,
+          59.57577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Lankar-Mates",
+        "data": "folklore/lankar-mates.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.214748,
+          59.579845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Finnen på Sebbehea, Karlanda",
+        "data": "folklore/finnen-på-sebbehea.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.265549,
+          59.593516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Kempas backe i Älgå",
+        "data": "folklore/kempas-backe-i-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.367859,
+          59.653585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Mickel på Mickelshöjda, Älgå",
+        "data": "folklore/mickel-på-mickelshöjda-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.34895,
+          59.59227
+        ]
+      }
+    }
+  ]
+}
