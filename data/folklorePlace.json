@@ -165,6 +165,37 @@
           59.48651
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Hultebyn i Karlanda",
+        "data": "folklore/hultebyn-i-karlanda-och-rök-i-sillerud.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.103769,
+          59.583023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Rök i Sillerud",
+        "data": "folklore/hultebyn-i-karlanda-och-rök-i-sillerud.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.398243,
+          59.225392
+        ]
+      }
     }
+
   ]
 }
