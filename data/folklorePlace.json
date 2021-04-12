@@ -150,6 +150,21 @@
           59.643556
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Lenungen, Glava",
+        "data": "folklore/lenungen-glava.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.34305,
+          59.48651
+        ]
+      }
     }
   ]
 }

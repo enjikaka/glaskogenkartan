@@ -46,7 +46,7 @@ main {
 }
 
 p::first-line {
-  text-indent: 40px;
+  text-indent: 1rem;
 }
 
 p {
@@ -74,4 +74,11 @@ h1 {
 
 h3 {
   margin-top: 4rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 5px solid rgba(0, 0, 0, 0.2);
+  margin-left: 0;
+  padding-left: 1rem;
 }
