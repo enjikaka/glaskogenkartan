@@ -4,7 +4,7 @@ module.exports = {
     "*.{html,css,js,json}",
     "web_modules/*.js",
     "data/*.json",
-    "created-page/*.html",
+    "data/folklore/*.html",
     "components/*.{html,css,js}",
     "img/*.{png,svg,ico}"
   ],

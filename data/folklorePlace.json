@@ -105,6 +105,51 @@
           59.59227
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Djufsheden, Silbodal",
+        "data": "folklore/djufsheden-silbodal.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.29956,
+          59.54299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Trumpinntorpet, Älgå",
+        "data": "folklore/trumpinntorpet-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.36491,
+          59.57107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Brobacken, Älgå",
+        "data": "folklore/brobacken-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.358418,
+          59.643556
+        ]
+      }
     }
   ]
 }
