@@ -255,6 +255,21 @@
           59.632591
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Byerud, Järnskog",
+        "data": "folklore/byerud-järnskog.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.27539,
+          59.63424
+        ]
+      }
     }
   ]
 }
