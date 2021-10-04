@@ -20,16 +20,15 @@ async function FolkloreArticle (props) {
   postRender(() => {
     $('#close-button').addEventListener('click', () => closePage());
 
-    document.addEventListener('folklore:display', async e => {
-
+    document.addEventListener('folklore:display', e => {
       $().setAttribute('open', 'open');
 
-      const response = await fetch(e.detail.url);
-      const html = await response.text();
+      const htmlPromise = fetch(e.detail.url).then(r => r.text());
 
-      const fragment = document.createRange().createContextualFragment(html);
+      setTimeout(async () => {
+        const html = await htmlPromise;
+        const fragment = document.createRange().createContextualFragment(html);
 
-      setTimeout(() => {
         requestAnimationFrame(() => {
           $('main').appendChild(fragment);
         });
