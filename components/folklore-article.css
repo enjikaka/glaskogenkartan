@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Muli:wght@300;400');
 
 :host {
-  font-family: 'PT Serif', serif;
+  font-family: 'EB Garamond', serif;
   position: fixed;
   top: calc(var(--golden-ratio) * 1em);
   left: calc(var(--golden-ratio) * 1em);
@@ -19,6 +19,7 @@
   box-shadow: none;
   content-visibility: auto;
   will-change: transform;
+  font-size: 20px;
 }
 
 :host([open]) {
@@ -63,12 +64,11 @@ cite {
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: normal;
-  font-style: italic;
-  margin-top: 0;
+  margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
 h3 {
