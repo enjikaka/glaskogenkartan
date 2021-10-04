@@ -25,7 +25,7 @@
   opacity: 1;
   pointer-events: auto;
   transform: none;
-  transition: transform 500ms ease, box-shadow 500ms ease 500ms
+  transition: transform 500ms ease;
 }
 
 #close-button {

@@ -14,22 +14,26 @@ async function FolkloreArticle (props) {
 
   function closePage() {
     $().removeAttribute('open');
+    $('main').innerHTML = '';
   }
 
   postRender(() => {
     $('#close-button').addEventListener('click', () => closePage());
 
     document.addEventListener('folklore:display', async e => {
-      console.log('folklore:display', e);
 
       $().setAttribute('open', 'open');
 
       const response = await fetch(e.detail.url);
       const html = await response.text();
 
-      requestAnimationFrame(() => {
-        $('main').innerHTML = html;
-      });
+      const fragment = document.createRange().createContextualFragment(html);
+
+      setTimeout(() => {
+        requestAnimationFrame(() => {
+          $('main').appendChild(fragment);
+        });
+      }, 500);
     });
   });
 }
