@@ -146,8 +146,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.358418,
-          59.643556
+          12.35713,
+          59.64357
         ]
       }
     },
@@ -195,7 +195,66 @@
           59.225392
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Baggetorp, Älgå",
+        "data": "folklore/baggetorp.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.36565,
+          59.65843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Brobacken, Älgå",
+        "data": "folklore/brobacken-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.357838,
+          59.643599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Bagge-Pers Skvaltkvarn",
+        "data": "folklore/sättra-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.29590,
+          59.63930
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Sättra, Älgå",
+        "data": "folklore/sättra-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.308829,
+          59.632591
+        ]
+      }
     }
-
   ]
 }
