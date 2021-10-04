@@ -25,7 +25,6 @@
   opacity: 1;
   pointer-events: auto;
   transform: none;
-  box-shadow: 0 0 10vw black;
   transition: transform 500ms ease, box-shadow 500ms ease 500ms
 }
 
