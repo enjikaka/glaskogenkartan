@@ -20,19 +20,25 @@ async function FolkloreArticle (props) {
   postRender(() => {
     $('#close-button').addEventListener('click', () => closePage());
 
-    document.addEventListener('folklore:display', e => {
+    document.addEventListener('folklore:display', async e => {
+      $('main').innerHTML = 'Laddar...';
+
       $().setAttribute('open', 'open');
 
       const htmlPromise = fetch(e.detail.url).then(r => r.text());
+      const animationTimeout = new Promise(r => setTimeout(() => r(), 500));
 
-      setTimeout(async () => {
-        const html = await htmlPromise;
-        const fragment = document.createRange().createContextualFragment(html);
+      const [html] = await Promise.all([
+        htmlPromise,
+        animationTimeout
+      ]);
 
-        requestAnimationFrame(() => {
-          $('main').appendChild(fragment);
-        });
-      }, 500);
+      const fragment = document.createRange().createContextualFragment(html);
+
+      requestAnimationFrame(() => {
+        $('main').innerHTML = '';
+        $('main').appendChild(fragment);
+      });
     });
   });
 }
