@@ -19,7 +19,7 @@
   box-shadow: none;
   content-visibility: auto;
   will-change: transform;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 :host([open]) {
@@ -27,6 +27,7 @@
   pointer-events: auto;
   transform: none;
   transition: transform 500ms ease;
+  overflow-y: auto;
 }
 
 #close-button {
@@ -41,7 +42,6 @@
 }
 
 main {
-  overflow-y: auto;
   height: 100%;
 }
 
@@ -80,4 +80,32 @@ blockquote {
   border-left: 5px solid rgba(0, 0, 0, 0.2);
   margin-left: 0;
   padding-left: 1rem;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  :host {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    transition: transform 500ms ease;
+    width: 30vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    overflow-y: auto;
+    font-size: 1.1rem;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    margin: calc(var(--golden-ratio) * 1em);
+  }
+
+  article:last-child {
+    padding-bottom: calc(var(--golden-ratio) * 1em);
+  }
 }

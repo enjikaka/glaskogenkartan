@@ -270,6 +270,21 @@
           59.63424
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Fjällboda, Järnskog",
+        "data": "folklore/fjällboda-järnskog.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.26673,
+          59.61370
+        ]
+      }
     }
   ]
 }

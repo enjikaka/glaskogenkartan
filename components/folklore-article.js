@@ -9,12 +9,22 @@ async function FolkloreArticle (props) {
     <header>
       <button id="close-button">Stäng ruta</button>
     </header>
-    <main></main>
+    <main>
+      <h1>Informationsruta</h1>
+      <p>
+        Välj en punkt i kartan för att få en utförlig beskrivning i denna ruta.
+      </p>
+    </main>
   `;
 
   function closePage() {
     $().removeAttribute('open');
-    $('main').innerHTML = '';
+    $('main').innerHTML = `
+    <h1>Informationsruta</h1>
+    <p>
+      Välj en punkt i kartan för att få en utförlig beskrivning i denna ruta.
+    </p>
+    `;
   }
 
   postRender(() => {

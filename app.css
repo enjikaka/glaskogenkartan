@@ -86,3 +86,13 @@ lantmateriet-karta {
 #menu-button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: 800px) and (orientation: landscape) {
+  lantmateriet-karta {
+    position: absolute;
+    width: 70vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
