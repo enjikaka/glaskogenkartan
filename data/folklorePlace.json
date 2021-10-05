@@ -300,6 +300,21 @@
           59.61318
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Övre Nybygärdet i Gränsjö, Älgå",
+        "data": "folklore/övre-nybygärdet-i-gränsjö-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.32418,
+          59.61450
+        ]
+      }
     }
   ]
 }
