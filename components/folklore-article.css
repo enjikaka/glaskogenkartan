@@ -58,6 +58,10 @@ p + p {
   margin-bottom: 1em;
 }
 
+p:not(:first-child) {
+  text-indent: calc(var(--golden-ratio) * 1em);
+}
+
 cite {
   display: block;
   text-align: right;
