@@ -285,6 +285,21 @@
           59.61370
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
+        "title": "Nybyggarn i Gränsjö, Älgå",
+        "data": "folklore/nybyggaren-i-gränsjö-älgå.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.32135,
+          59.61318
+        ]
+      }
     }
   ]
 }
