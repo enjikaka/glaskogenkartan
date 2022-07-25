@@ -1,6 +1,9 @@
 import './components/lantmateriet-karta.js';
 import './components/glaskogencard-buy.js';
-import './components/folklore-article.js';
+
+if (document.location.href.includes('folkminnen')) {
+  import('./components/folklore-article.js');
+}
 
 const overnightCabinIcon = L.icon({
   iconUrl: 'img/overnight-cabin.svg',
