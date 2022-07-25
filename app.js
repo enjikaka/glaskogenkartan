@@ -3,6 +3,8 @@ import './components/glaskogencard-buy.js';
 
 if (document.location.href.includes('folkminnen')) {
   import('./components/folklore-article.js');
+
+  document.body.classList.add('folkminnen');
 }
 
 const overnightCabinIcon = L.icon({

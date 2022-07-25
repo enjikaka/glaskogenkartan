@@ -88,7 +88,7 @@ lantmateriet-karta {
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
-  lantmateriet-karta {
+  .folkminnen lantmateriet-karta {
     position: absolute;
     width: 70vw;
     top: 0;
