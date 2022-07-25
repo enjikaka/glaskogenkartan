@@ -20,22 +20,6 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Gängene Lillebo",
-        "bedCount": 4,
-        "type": "OVERNIGHT_CABIN",
-        "glaskogenNumber": 45
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.55431,
-          59.43407
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "title": "Södra Sundsudden",
         "bedCount": 4,
         "type": "OVERNIGHT_CABIN",
