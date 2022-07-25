@@ -108,6 +108,10 @@ async function onEachFeature(feature, layer) {
       popupContent.push(`Bäddar: ${feature.properties.bedCount}`);
     }
 
+    if (feature.properties.desc) {
+      popupContent.push(`${feature.properties.desc}`);
+    }
+
     // popupContent.push(feature.geometry.coordinates.join(', '));
 
     layer.bindPopup(popupContent.join('<br>'));

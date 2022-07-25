@@ -5,9 +5,8 @@
       "type": "Feature",
       "properties": {
         "title": "Barlingshult Småbruk",
-        "bedCount": 0,
         "type": "FARM",
-        "bedCount": "Säljer lokalproducerad honung"
+        "desc": "Säljer lokalproducerad honung"
       },
       "geometry": {
         "type": "Point",
