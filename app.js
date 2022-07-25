@@ -14,6 +14,13 @@ const overnightCabinIcon = L.icon({
   popupAnchor: [0, -20]
 });
 
+const farmIcon = L.icon({
+  iconUrl: 'img/farm.svg',
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
+  popupAnchor: [0, -20]
+});
+
 const leanToIcon = L.icon({
   iconUrl: 'img/lean-to.svg',
   iconSize: [32, 32],
@@ -51,6 +58,10 @@ function isApple (userAgent = navigator.userAgent) {
 }
 
 function getIconForFeature (feature) {
+  if (feature.properties.type === 'FARM') {
+    return farmIcon;
+  }
+
   if (feature.properties.type === 'OVERNIGHT_CABIN') {
     return overnightCabinIcon;
   }

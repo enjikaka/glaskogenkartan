@@ -4,6 +4,22 @@
     {
       "type": "Feature",
       "properties": {
+        "title": "Barlingshult Småbruk",
+        "bedCount": 0,
+        "type": "FARM",
+        "bedCount": "Säljer lokalproducerad honung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3123731,
+          59.5127096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "title": "Dammarna",
         "bedCount": 10,
         "type": "OVERNIGHT_CABIN",
