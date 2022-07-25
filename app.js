@@ -102,7 +102,9 @@ async function onEachFeature(feature, layer) {
       popupContent.push(`<b>${feature.properties.title}</b>`);
     }
 
-    popupContent.push(`Glaskogennummer: ${feature.properties.glaskogenNumber || 'okänt'}`);
+    if (feature.properties.type !== 'FARM') {
+      popupContent.push(`Glaskogennummer: ${feature.properties.glaskogenNumber || 'okänt'}`);
+    }
 
     if (feature.properties.bedCount) {
       popupContent.push(`Bäddar: ${feature.properties.bedCount}`);
