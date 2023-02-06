@@ -5,6 +5,21 @@
       "type": "Feature",
       "properties": {
         "type": "FOLKLORE_PLACE",
+        "title": "Hylstergumman",
+        "data": "folklore/hylstergumman.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.307674,
+          59.571639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "FOLKLORE_PLACE",
         "title": "Glasnäsfinnarna i Älgå",
         "data": "folklore/glasnäsfinnarna-i-älgå.html"
       },
