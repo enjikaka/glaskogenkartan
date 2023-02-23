@@ -2,14 +2,14 @@
   "name": "glaskogenkartan",
   "type": "module",
   "version": "0.0.1",
-  "description": "Glaskogenkartan.",
-  "main": "build.js",
+  "description": "En digital karta över Glaskogen",
   "engines": {
-    "node": "^13"
+    "node": "^18"
   },
   "scripts": {
     "dev": "http-server . -p 1337 -P",
-    "build": "npx snowpack && workbox generateSW workbox-config.cjs"
+    "esbuild": "esbuild --minify --outdir=dist --platform=browser --format=esm src/*.js src/**/*.{js,css}",
+    "build": "rimraf dist && npm run esbuild && workbox generateSW workbox-config.cjs"
   },
   "repository": {
     "type": "git",
@@ -19,21 +19,19 @@
     "glaskogen",
     "karta"
   ],
-  "author": "Jeremy Karlsson <jeremy@vufuzi.se>",
+  "author": "Jeremy Karlsson <jeremy@barlingshult.se>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/enjikaka/glaskogenkartan/issues"
   },
   "homepage": "https://github.com/enjikaka/glaskogenkartan#readme",
   "devDependencies": {
-    "fs-extra": "^9.0.0",
+    "esbuild": "^0.17.10",
     "http-server": "^0.12.1",
-    "make-fetch-happen": "^8.0.4",
-    "snowpack": "^1.6.0",
-    "unescape-js": "^1.1.4",
+    "rimraf": "^4.1.2",
     "workbox-cli": "^5.1.2"
   },
   "dependencies": {
-    "webact": "^0.1.16"
+    "webact": "^0.2.23"
   }
 }

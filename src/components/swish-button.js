@@ -1,4 +1,4 @@
-import { registerFunctionComponent } from '../web_modules/webact.js';
+import { registerFunctionComponent } from 'webact';
 
 function generateSwishURL ({
   amount,
@@ -91,4 +91,6 @@ async function SwishButton (props) {
   `;
 }
 
-export default registerFunctionComponent(SwishButton);
+export default registerFunctionComponent(SwishButton, {
+  name: 'swish-button'
+});

@@ -1,21 +1,4 @@
-import { registerFunctionComponent } from '../web_modules/webact.js';
-
-import './swish-button.js';
-
-async function GlaskogencardBuy (props) {
-  const { $, useCSS, postRender, html } = this;
-
-  await useCSS();
-
-  function closePage() {
-    $().removeAttribute('open');
-  }
-
-  postRender(() => {
-    $('#close-button').addEventListener('click', () => closePage());
-  });
-
-  html`
+import{registerFunctionComponent as a}from"webact";import"./swish-button.js";async function o(){const{$:t,postRender:e,html:n,useCSS:s}=this;await s();function r(){t().removeAttribute("open")}e(()=>{t("#close-button").addEventListener("click",()=>r())}),n`
     <button id="close-button">Stäng</button>
     <h2>Glaskogenkort</h2>
     <p>För att nyttja vandringsleder, vindskydd, ved, övernattningsstugor och dylikt i Glaskogens naturreservat krävs att du har ett Glaskogenkort. Du kan köpa Glaskogenkort på turistbyrån i Arvika eller på bensinstationer i närheten av Glaskogen.</p>
@@ -48,9 +31,4 @@ async function GlaskogencardBuy (props) {
     <p>Tillåter dig att fiska i de flesta sjöar i Glaskogens naturreservat. Giltigt från köpetillfälle till klockan 24:00.</p>
     <span>80 kr per person</span>
     <swish-button amount="80" message="Fiskekort." payee="1236824262" qr-code="img/fiskekort.svg"></swish-button>
-  `;
-}
-
-export default registerFunctionComponent(GlaskogencardBuy, {
-  metaUrl: import.meta.url
-});
+  `}var g=a(o,{metaUrl:import.meta.url,name:"glaskogencard-buy"});export{g as default};

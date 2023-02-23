@@ -1,4 +1,5 @@
-import { registerFunctionComponent } from '../web_modules/webact.js';
+import { registerFunctionComponent } from 'webact';
+import './folklore-article.css';
 
 async function FolkloreArticle (props) {
   const { $, useCSS, postRender, html } = this;
@@ -54,5 +55,6 @@ async function FolkloreArticle (props) {
 }
 
 export default registerFunctionComponent(FolkloreArticle, {
-  metaUrl: import.meta.url
+  metaUrl: import.meta.url,
+  name: 'folklore-article'
 });
