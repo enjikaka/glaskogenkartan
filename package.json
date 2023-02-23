@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "http-server . -p 1337 -P",
-    "esbuild": "esbuild --minify --outdir=dist --platform=browser --format=esm src/*.js src/**/*.{js,css}",
+    "esbuild": "esbuild --minify --outdir=dist --platform=browser --format=esm src/*.js src/components/*.{js,css}",
     "build": "rimraf dist && npm run esbuild && workbox generateSW workbox-config.cjs"
   },
   "repository": {
