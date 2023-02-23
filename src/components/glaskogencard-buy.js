@@ -19,35 +19,36 @@ async function GlaskogencardBuy () {
     <button id="close-button">Stäng</button>
     <h2>Glaskogenkort</h2>
     <p>För att nyttja vandringsleder, vindskydd, ved, övernattningsstugor och dylikt i Glaskogens naturreservat krävs att du har ett Glaskogenkort. Du kan köpa Glaskogenkort på turistbyrån i Arvika eller på bensinstationer i närheten av Glaskogen.</p>
-    <p>Det går också bra att Swisha till Stiftelsen Glaskogen. Referera då till nedanstående priser.</p>
-    <p>Du kan skanna QR-koden med din Swish-app på datorn, eller klicka på knappen för att öppna Swish på mobilen! Alternativt swisha manuellt till <tt>123 682 42 62</tt></p>
+    <p>Det går också bra att Swisha till Stiftelsen Glaskogen på nr <a href="tel:1236824262">1236824262</a>. Referera då till nedanstående priser.</p>
     <p>Pengarna går till underhåll av stugor, vindskydd, leder, ved och så vidare.</p>
 
+    <a href="https://www.glaskogen.se/glaskogskortet/">Köp Glaskogenkort</a>.
+
     <h3>Dagskort</h3>
-    <p>Passar dig som över dagen vandrar eller grillar i Glaskogen, utan övernattning. Tillåter dig att <em>över dagen</em> nyttja ved, vindskydd och stugor. För övernattning, se dygnskort.</p>
-    <span>40 kr per person</span>
-    <swish-button amount="40" message="Glaskogenkort. Dag." payee="1236824262" qr-code="img/dagskort.svg"></swish-button>
+    <p>Passar dig som över dagen vandrar eller grillar i Glaskogen, <em>utan övernattning</em>. Tillåter dig att <em>över dagen</em> nyttja ved, vindskydd och stugor. För övernattning, se nedan.</p>
+    <span>50 kr per person</span>
 
     <h3>Dygnskort</h3>
-    <p>För dig som skall övernatta i Glaskogen. Tillåter dig att nyttja ved, vindskydd och stugor.</p>
-    <span>60 kr per person</span>
-    <a id="night"></a>
-    <swish-button amount="60" message="Glaskogenkort. Dygn." payee="1236824262" qr-code="img/dygnskort.svg"></swish-button>
+    <p>För dig som skall övernatta i Glaskogen. Tillåter dig även nyttja vindskydd, kojor och stugor.</p>
+    <span>80 kr per person</span>
 
-    <h3>Årskort</h3>
+    <h3>3-dygnskort</h3>
+    <span>200 kr per person</span>
+
+    <h3>Veckokort</h3>
+    <span>480 kr per person</span>
+
+    <h3>Årskort, 1 person</h3>
     <p>Samma befogenheter som dygnskort men gäller för ett helt år.</p>
-    <span>800 kr per person</span>
-    <swish-button amount="800" message="Glaskogenkort. År." payee="1236824262" qr-code="img/årskort.svg"></swish-button>
+    <span>980 kr</span>
 
     <h3>Årskort, familj</h3>
     <p>Samma befogenheter som dygnskort men gäller för ett helt år, och hela din familj.</p>
-    <span>1200 kr per person</span>
-    <swish-button amount="1200" message="Glaskogenkort. År, familj." payee="1236824262" qr-code="img/årskort-familj.svg"></swish-button>
+    <span>1600 kr per person</span>
 
     <h3>Fiskekort</h3>
-    <p>Tillåter dig att fiska i de flesta sjöar i Glaskogens naturreservat. Giltigt från köpetillfälle till klockan 24:00.</p>
-    <span>80 kr per person</span>
-    <swish-button amount="80" message="Fiskekort." payee="1236824262" qr-code="img/fiskekort.svg"></swish-button>
+    <p>Tillåter dig att fiska i de flesta sjöar i Glaskogens naturreservat.</p>
+    <a href="https://www.ifiske.se/fiskekort-glaskogen.htm">Köp fiskekort</a>
   `;
 }
 
